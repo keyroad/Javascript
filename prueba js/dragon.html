@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dragon</title>
+</head>
+<body>
+	<script>
+	var atacar = true;
+	var vosAcertas = Math.floor(Math.random()*2);
+	var lastimaEsteRound = Math.floor(Math.random()*5+1);
+	var perdidaTotal = 0;
+	while (atacar){
+	    if(vosAcertas){
+	        console.log("¡Acertaste!");
+	        perdidaTotal += lastimaEsteRound;
+	        if(perdidaTotal >=4){
+	            console.log("Derrotaste al dragon è_e");
+	            atacar = false;
+	        }else
+	            vosAcertas = Math.floor(Math.random()*2);
+	    }
+	    else
+	        console.log("El dragon te derroto");
+    	atacar = false;
+}
+	</script>
+</body>
+</html>

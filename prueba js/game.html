@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script >
+	
+	do{
+		var usuarioElige = prompt("piedra, papel o tijera?");
+		if(usuarioElige === "piedra" || usuarioElige === "papel" || usuarioElige === "tijera" )
+			break;
+		else
+			console.log("Has introducido un valor erroneo");
+	}while(true);
+	var computadoraElige = Math.random();
+	if (computadoraElige <0,34){
+		computadoraElige = "piedra";
+	}else if(computadoraElige <=0.67){
+		computadoraElige = "papel";
+	}else{
+		computadoraElige = "tijera";
+	}console.log("Usuario "+usuarioElige);
+	console.log("Computadora "+computadoraElige);
+	var comparar = function(eleccion1, eleccion2){
+    if(eleccion1 === eleccion2)
+        return "¡Es un empate!";
+    if(eleccion1==="piedra")
+        if(eleccion2 === "tijera")
+            return "piedra gana";
+        else 
+            return "papel gana";
+    else if(eleccion1 === "papel")
+        if(eleccion2==="piedra")
+            return "gana papel";
+        else
+            return "gana tijera";
+    else
+        if(eleccion2 === "piedra")
+            return "gana piedra";
+        else 
+            return "gana tijera";
+}
+	console.log(comparar(usuarioElige, computadoraElige));
+</script>
+</body>
+</html>

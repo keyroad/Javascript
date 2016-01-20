@@ -1,0 +1,31 @@
+* {
+	margin: 0px;
+
+}
+
+input{
+	text-align: center;
+	font-size: 100%;
+	font-weight: italic;
+}
+#reloj-binario div{
+	margin: 10px;
+}
+.circulo{
+	display: block;
+	width: 18px;
+	height: 18px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-border: 1px solid black;
+	-moz-border: 1px solid black;
+	-ms-border: 1px solid black;
+	-o-border: 1px solid black;
+	border: 1px solid black;
+	
+	background: white;
+}
